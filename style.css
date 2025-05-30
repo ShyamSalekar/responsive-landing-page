@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*------------------- Header ------------------*/
+:root {
+  --primary-color: #0072ff;
+  --dark-bg: #1e1e2f;
+  --hover-color: #00d1b2;
+}
+
+header {
+  background-color: #1e1e2f;
+  background-color: var(--dark-bg);
+  padding: 20px 0;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #00d1b2;
+}
+
+/*-------------- Hero Section -----------------*/
+
+.hero {
+  background: linear-gradient(to right, #0056cc, #ff0000);
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: white;
+  color: var(--primary-color);
+  color: #0072ff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/*-------------- Footer ----------------*/
+
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+}
+
+.socials a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: #00d1b1;
+}
+
+/* --------------media queries ---------------- */
+@media (max-width: 768px) {
+  .container,
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .socials a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+/* ------------ Contact Page Css --------------------- */
+/* Contact Section */
+.contact {
+  background: linear-gradient(to right, #0056cc, #ff0000);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #0072ff;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #0072ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0056cc;
+}
