@@ -25,7 +25,7 @@ Created as part of my web development internship at **Elevate Labs**.
 
 ## 🚀 Live Demo
 
-[🔗 GitHub Pages Link](https://your-username.github.io/your-repo-name/)
+[🔗 GitHub Pages Link](https://shyamsalekar.github.io/responsive-landing-page/)
 
 _(Replace with actual link after deploying)_
 
